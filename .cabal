@@ -1,0 +1,12 @@
+Name:                learnhaskell
+Version: 0.1
+Description:         Learn Haskell
+License:             GPL
+Author:              Iurii Susuk
+Maintainer:          yurasusuk@gmail.com
+Build-Type:          Simple
+Cabal-Version:       >=1.8
+ 
+Executable greetings
+   Main-is:           hw1.hs
+   Build-Depends:     base >= 3 && < 5 
