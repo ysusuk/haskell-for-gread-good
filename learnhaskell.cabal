@@ -12,3 +12,14 @@ Library
     Exposed-Modules:     Simple
     Build-Depends:       base == 4.*
     GHC-Options:         -Wall
+
+test-suite simple-tests
+  type:             exitcode-stdio-1.0
+  hs-source-dirs:   tests, src
+  main-is:          MainTestSuite.hs
+  build-depends:    base,
+                    HUnit,
+                    QuickCheck,
+                    tasty,
+                    tasty-hunit,
+                    tasty-quickcheck
