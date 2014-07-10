@@ -10,5 +10,5 @@ Cabal-Version:           >=1.8
 Library
     Hs-Source-Dirs:      src
     Exposed-Modules:     Simple
-    Build-Depends:      
+    Build-Depends:       base == 4.*
     GHC-Options:         -Wall

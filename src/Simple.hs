@@ -1,7 +1,6 @@
 module Simple where
 
 import System.Environment
-import Test.QuickCheck
 
 double' :: Int -> Int
 double' x = x + x
