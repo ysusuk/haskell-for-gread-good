@@ -6,6 +6,7 @@ Author:                  Iurii Susuk
 Maintainer:              yurasusuk@gmail.com
 Build-Type:              Simple
 Cabal-Version:           >=1.8
+tested-with:             GHC>=7.6.3
 
 Library
     Hs-Source-Dirs:      src
@@ -13,13 +14,13 @@ Library
     Build-Depends:       base == 4.*
     GHC-Options:         -Wall
 
-test-suite simple-tests
-  type:             exitcode-stdio-1.0
-  hs-source-dirs:   tests, src
-  main-is:          MainTestSuite.hs
-  build-depends:    base,
-                    HUnit,
-                    QuickCheck,
-                    tasty,
-                    tasty-hunit,
-                    tasty-quickcheck
+Test-Suite simple-tests
+    Type:                exitcode-stdio-1.0
+    Hs-Source-Dirs:      test, src
+    Main-is:             MainTestSuite.hs
+    Build-Depends:       base,
+                         HUnit, 
+                         QuickCheck,
+                         test-framework,
+                         test-framework-hunit,
+                         test-framework-quickcheck2

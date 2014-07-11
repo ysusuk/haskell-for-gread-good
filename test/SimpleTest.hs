@@ -1,4 +1,4 @@
-module Test where
+module SimpleTest where
 
 import Test.HUnit
 import Test.QuickCheck
@@ -15,8 +15,8 @@ testFactorial1 =
 
 testFactorial2 :: Assertion
 testFactorial2 =
-    1 @=? factorial' 2
+    2 @=? factorial' 2
 
-testFactorial2 :: Assertion
-testFactorial2 =
+testFactorial3 :: Assertion
+testFactorial3 =
     6 @=? factorial' 3
