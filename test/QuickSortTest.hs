@@ -19,4 +19,4 @@ testQuickSortNegative =
 
 testQuickSortEmpty :: Assertion
 testQuickSortEmpty =
-	assertBool "should be empty" (null (quickSort [] :: [Int]))
+	assertBool "should be empty" $ null (quickSort [] :: [Int])
