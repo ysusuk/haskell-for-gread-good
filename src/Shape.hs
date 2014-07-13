@@ -1,8 +1,8 @@
 module Shape (
 	Point(..),
     Shape(..),
-    area
---    nudge,
+    area,
+    nudge,
 --    baseCircle,
 --    baseRectangle
 ) where
