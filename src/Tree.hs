@@ -18,8 +18,8 @@ insert x (Node a left right)
     | x > a  = Node a left (insert x right)
 
 elemEx :: (Ord a) => a -> Tree a -> Bool
-elemEx x EmptyTree = False
-elemEx x (Node a left right)
+elem x EmptyTree = False
+elem x (Node a left right)
     | x == a = True
-    | x < a  = elemEx x left
-    | x > a  = elemEx x right
+    | x < a  = elem x left
+    | x > a  = elem x right
